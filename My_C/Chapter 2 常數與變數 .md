@@ -111,7 +111,28 @@ int main(void){
 # 2-5 練習題 (三個變數值交換)
 ### 題目: 交換前： a = 40 , b = 20 , c = 100 交換後： a = 20 , b = 100 , c = 40
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+
+    int a = 40   ; //宣告變數a值 
+    int b = 20   ; //宣告變數b值
+	int c = 100  ; 
+    int temp = 0 ; //宣告暫存變數 
+
+    printf("交換前： a = %d , b = %d , c = %d\n",a,b,c);
+	
+    temp = a ; // a 傳給 temp   
+    a  =  b ;  //b 傳給 a 
+    b  =  c ;  //c 傳給 b 
+	c = temp ; //temp 傳給 c 
+    printf("交換後： a = %d , b = %d , c = %d\n",a,b,c);
+  
+    system("pause"); //停留畫面 
+    return 0 ;       //程式結束 回傳 0 
+	
+}
 ```
  
  
