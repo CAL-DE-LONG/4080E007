@@ -15,7 +15,7 @@ int main(void){
 	
 	printf("圓周長 = %f\n",2 * PI * R) ; //計算半徑為5.0的圓周長 
 	
-	system("pause"); //保留畫面 
+	system("pause"); //停留畫面 
 	return 0;        //程式結束 回傳 0 
 	
 } 
@@ -79,6 +79,10 @@ int main(void){
 帳單： 卡布奇諾 5 杯 250 元
 ```
 
+# 2-4 兩個變數值交換
+```
+
+```
 
 
 
