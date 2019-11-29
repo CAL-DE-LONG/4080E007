@@ -108,6 +108,24 @@ int main(void){
 交換前： a = 1000 , b = 2000
 交換後： a = 2000 , b = 1000
 ```
-# 2-5 
+# 2-5 整數變數的平均值
+```
+#include <stdio.h>
+#include <stdlib.h>
 
-
+int main(void){
+	
+    double a = 888 ;
+    double b = 100 ;
+    double c = 99  ;
+	
+    double d = (a+b+c)/3;
+ 	
+    printf("%f\n",d);
+	
+    system("pause");
+    return 0;
+	
+}
+ 
+ 
