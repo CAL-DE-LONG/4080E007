@@ -95,7 +95,7 @@ int main(void){
 	
     printf("答案 = %d\n",a+b+c); //輸出100+200+300的結果 
 
-    system("pause");  //保留畫面 
+    system("pause");  //停留畫面 
     return 0 ;        //程式結束 回傳 0 
     
 } 
