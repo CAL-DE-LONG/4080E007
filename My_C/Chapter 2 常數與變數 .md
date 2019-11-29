@@ -32,8 +32,8 @@ int main(void){
 
 int main(void){
 	
-	int Signature_Milk_Tea = 40 ; //宣告 招牌奶茶變數並指定初值 
-	int Pearl_milk_tea = 45 ;     //宣告 珍珠奶茶變數並指定初值 
+	int Signature_Milk_Tea = 40 ; //宣告 招牌奶茶的變數並指定初值 
+	int Pearl_milk_tea = 45 ;     //宣告 珍珠奶茶的變數並指定初值 
 	
 	int cup_Signature_Milk_Tea = 1 ; //招牌奶茶的杯數初值為 1杯 
 	int cup_Pearl_milk_tea = 1 ;     //珍珠奶茶的杯數初值為 1杯 
@@ -51,4 +51,35 @@ int main(void){
 珍珠奶茶 1 杯 45 元
 ```
 
-# 2-3
+# 2-3 指定變數值
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+	int Cappuccino = 50 ;    //宣告卡布其諾的變數並指定初值 
+	int cup_Cappuccino = 5 ; //宣告卡布其諾的杯數初值為 5杯 
+	int total_price = 0 ;    //宣告結帳金額的變數並指定初值 
+	
+	printf("卡布其諾咖啡 原價一杯 %d 元\n",Cappuccino);
+	
+	total_price = Cappuccino * cup_Cappuccino ;
+	
+	printf("卡布其諾 %d 杯 %d 元\n",cup_Cappuccino,total_price);
+
+	
+	system("pause"); //停留畫面 
+	return 0;        //程式結束 回傳 0 
+} 
+```
+### 執行結果
+```
+卡布奇諾咖啡 原價一杯 50 元
+帳單: 卡布奇諾 5 杯 250 元
+```
+
+
+
+
+
