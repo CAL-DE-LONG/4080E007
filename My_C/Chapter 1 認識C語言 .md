@@ -68,8 +68,8 @@ int main(void){
     bignumber = (sum + difference)/ 2 ;     //大數 = (和 + 差)/2 
     smallnumber = (sum - difference)/ 2 ;   //小數 = (和 - 差)/2
 	
-    printf("大數: %d\n",bignumber);    //輸出 大數的數值 
-    printf("小數: %d\n",smallnumber);  //輸出 小數的數值 
+    printf("大數： %d\n",bignumber);    //輸出 大數的數值 
+    printf("小數： %d\n",smallnumber);  //輸出 小數的數值 
 	
     system("pause");   //停留畫面 
     return 0 ;         //程式結束 回傳 0 
@@ -78,8 +78,8 @@ int main(void){
 ```
 ### 執行結果
 ```
-大數: 7
-小數: 3
+大數： 7
+小數： 3
 ```
 
 # 1-5 練習題 計算出(100+200+300)的值
