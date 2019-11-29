@@ -108,24 +108,10 @@ int main(void){
 交換前： a = 1000 , b = 2000
 交換後： a = 2000 , b = 1000
 ```
-# 2-5 整數變數的平均值
+# 2-5 練習題 (三個變數值交換)
+### 題目: 交換前： a = 40 , b = 20 , c = 100 交換後： a = 20 , b = 100 , c = 40
 ```
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(void){
-	
-    double a = 888 ;
-    double b = 100 ;
-    double c = 99  ;
-	
-    double d = (a+b+c)/3;
- 	
-    printf("%f\n",d);
-	
-    system("pause");
-    return 0;
-	
-}
+```
  
  
