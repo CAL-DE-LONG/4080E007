@@ -66,7 +66,7 @@ int main(void){
 	
 	total_price = Cappuccino * cup_Cappuccino ;
 	
-	printf("卡布其諾 %d 杯 %d 元\n",cup_Cappuccino,total_price);
+	printf("帳單：卡布其諾 %d 杯 %d 元\n",cup_Cappuccino,total_price);
 
 	
 	system("pause"); //停留畫面 
@@ -76,7 +76,7 @@ int main(void){
 ### 執行結果
 ```
 卡布奇諾咖啡 原價一杯 50 元
-帳單: 卡布奇諾 5 杯 250 元
+帳單： 卡布奇諾 5 杯 250 元
 ```
 
 
