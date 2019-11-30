@@ -76,6 +76,7 @@ int main(){
 	
     if (cup_Cappuccino < 10)
         total_price = Cappuccino * cup_Cappuccino ;
+	
     else 
         total_price = Cappuccino * 0.9 * cup_Cappuccino ;
 	
