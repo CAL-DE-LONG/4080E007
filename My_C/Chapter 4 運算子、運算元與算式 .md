@@ -154,5 +154,37 @@ int main(void){
 輸出 1 表示是英文字母 , 輸出 0 表示不是英文字母： 1       輸出 1 表示是英文字母 , 輸出 0 表示不是英文字母： 0
 ```
 
-# 4-5 
+# 4-5 代幣的轉換
+```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+	
+    int coin ;             //代幣 轉 現金 
+    int ten , five , one ; //轉換 十元 五元 一元
+	
+    printf("請輸入您的代幣總共多少： ");
+    scanf ("%d",&coin);
+	
+    ten = coin / 10 ;     //計算 十元 
+    five = coin % 5 /5 ;  //計算 五元 
+    one = coin %10 %5 ;   //計算 一元 
+	
+    printf("\n可領回： \n 十元：%d 個 \n 五元： %d 個 \n 一元： %d 個\n",ten,five,one);
+	
+    system("pause");
+    return 0;	
+	
+} 
+```
+### 執行結果
+```
+請輸入您的代幣總共多少： 218
+
+可領回：
+ 十元：21 個
+ 五元： 1 個
+ 一元： 3 個
+ 
+```
