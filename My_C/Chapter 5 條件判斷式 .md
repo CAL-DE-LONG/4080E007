@@ -97,6 +97,8 @@ int main(void){
 卡布奇諾 20 杯 900 元
 ```
 
+# 5-3 將成績 轉換成 GPA分數
+
 ### if-else if 條件判斷
 ```
 if (條件算式 1){
@@ -115,4 +117,51 @@ else{
   最後動作程式
 }
 
+```
+
+### 程式設計
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+    int grade ; //宣告 成績 變數
+	
+    printf("請輸入成績： ");
+    scanf ("%d\n",&grade);
+	
+    if (grade >= 80){
+        printf("優秀的 A 級 , GPA 為 4 \n");
+    }
+	
+    else if (grade < 80 && grade >= 70){  
+        printf("不錯的 B 級 , GPA 為 3 \n");
+    } 
+	
+    else if (grade < 70 && grade >= 60){
+        printf("及格的 C 級 , GPA 為 2 \n");
+    } 
+
+    else if (grade < 60 && grade >= 50){  
+        printf("加油的 D 級 , GPA 為 1 \n");
+    } 
+	
+    else {
+	printf("重考的 E 級 , GPA 為 0 \n"); 
+	printf("希望還有機會遇見你! \n"); 
+    }
+	
+    system("pause"); 
+    return 0;
+				
+}
+```
+### 執行結果
+```
+<1> 第一種執行結果          <2> 第一種執行結果
+
+請輸入成績： 85             請輸入成績： 45
+優秀的 A 級 , GPA 為 4      重考的 E 級 , GPA 為 0
+                           希望還有機會遇見你!
 ```
