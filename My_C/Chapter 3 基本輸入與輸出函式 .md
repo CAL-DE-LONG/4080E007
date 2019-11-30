@@ -17,7 +17,7 @@ int main(void){
 請輸入密碼：
 ```
 
-# 3-2 鍵盤輸出字元 + 16進位值
+# 3-2 鍵盤輸出字元 + 十六進位值
 ```
 #include <stdio.h>
 #include <stdlib.h>
