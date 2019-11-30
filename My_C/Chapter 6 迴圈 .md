@@ -84,7 +84,7 @@ for (初始算式 1 ; 條件算式 1 ; 控制算式 1){
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main(void){
 	
     int i , j ;      // i 是外迴圈變數 , j 是內迴圈變數 
 	
@@ -140,5 +140,5 @@ while (條件算式){
 # 6-4 猜數字遊戲 (範圍設定 1~99)
 
 ```
-
+4
 ```
