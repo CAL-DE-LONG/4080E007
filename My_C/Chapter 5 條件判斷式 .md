@@ -182,9 +182,52 @@ else {
 
 ### 程式設計
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+
+    char TOEIC_exam ; //詢問是否有考 多益英文測驗 
+    char gradeuate ;  //是否知道要考 多益英文測驗 
+    int  score     ;  //紀錄 多益英文測驗 的 成績 
+	
+    printf("你有考 TOEIC 嗎? <y/n> ： ");
+    TOEIC_exam = getche();
+	
+    if  (TOEIC_exam == 'y' || TOEIC_exam == 'Y'){
+		
+	printf("\n請輸入考幾分： ");
+	scanf ("%d\n",&score);
+		
+	if (score > 800){
+	
+	    printf("恭喜通過!\n");		
+	else
+	    printf("再加油!!!");	
+	    
+	}
+	
+	else {
+		
+	    printf("\n你知道沒通過不能畢業嗎? <y/n> ： ");
+            gradeuate = getche();
+		
+            if(gradeuate == 'y' || gradeuate == 'Y')
+	        printf("\n記得再去考一次!\n");	
+	    else
+		printf("\n現在你知道了吧!\n");
+			
+	}
+		
+	system("pause");
+	return 0;
+				
+}
 ```
 ### 執行結果
 ```
-
+<1> 第一種執行結果                <2> 第二種執行結果                      <3> 第三種執行結果
+你有考 TOEIC 嗎? <y/n> ： y      你有考 TOEIC 嗎? <y/n> ： n             你有考 TOEIC 嗎? <y/n> ： n
+請輸入考幾分： 900                你知道沒通過不能畢業嗎? <y/n> ： n       你知道沒通過不能畢業嗎? <y/n> ： y
+恭喜通過!                        現在你知道了吧!                         記得去考!
 ```
