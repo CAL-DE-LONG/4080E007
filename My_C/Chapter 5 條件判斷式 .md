@@ -63,7 +63,7 @@ else{
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main(void){
 	
     int Cappuccino = 50 ;    //宣告 卡布奇諾 初值為 50元 
     int cup_Cappuccino = 1 ; //宣告 卡布奇諾 杯數為  1杯 
