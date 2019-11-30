@@ -49,7 +49,7 @@ int main(void){
 需要    1元 紙鈔 0 張
 ```
 
-# 4-2 判別 
+# 4-2 判別 是否符合 規定
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -120,10 +120,39 @@ int main(void){
 一年後的本利和 = 1104081
 ```
 
-# 4-4 判斷輸入範圍
+# 4-4 判斷 是否為 英文字母
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+    int uppercase , lowercase ; //宣告 大寫 與 小寫 
+    char ch ; 
+	
+    printf ("請輸入一個英文字母： ");
+    ch = getchar(); 
+    printf ("您輸入的是 %c\n",ch);
+	
+    uppercase = ch > 64 && ch < 91  ; //判斷是否為 '大寫' 
+    lowercase = ch > 96 && ch < 123 ; //判斷是否為 '小寫' 
+	
+    printf("輸出 1 表示是英文字母 , 輸出 0 表示不是英文字母： ");
+    printf("%d\n",uppercase || lowercase);
+	
+    system("pause");
+    return 0;	
+	
+} 
+```
+### 執行結果
+```
+<1> 第一種執行結果                                      <2> 第一種執行結果
+
+請輸入一個英文字母： a                                  請輸入一個英文字母： 1
+您輸入的是 a                                           您輸入的是 1
+輸出 1 表示是英文字母 , 輸出 0 表示不是英文字母： 1       輸出 1 表示是英文字母 , 輸出 0 表示不是英文字母： 0
 ```
 
-```
-
-
+# 4-5 
 
