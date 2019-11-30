@@ -232,7 +232,7 @@ int main(void){
 恭喜通過!                        現在你知道了吧!                         記得去考!
 ```
 
-# 5-6 
+# 5-5 電話區碼判斷是哪個區域 
 
 ### switch-case 條件判斷
 ```
@@ -255,9 +255,102 @@ switch (條件算式){
 
 ### 程式設計
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+	
+    int Area_code ; //宣告 存放區碼變數 為 Area_code 
+	
+    printf("請輸入電話區域號碼： ");
+    scanf ("%d\n",&Area_code);
+	
+    switch(Area_code){
+		
+	case 1:{
+		printf("01   是保留號");
+	break;
+	}
+	
+	case 2:{
+		printf("02   是台北、新北、基隆 的區域號碼\n") ;
+	break;
+	}		
+	
+	case 3:{
+		printf("03   是桃園、新竹、宜蘭、花蓮 的區域號碼\n");
+	break;
+	}	
+ 	
+ 	case 37:{
+		printf("037  是苗栗的區域號碼\n");
+	break;
+	}	
+	 
+ 	case 4:{
+		printf("04   是台中、彰化 的區域號碼\n");
+	break;
+	}
+		
+	case 49:{
+		printf("049  是南投的區域號碼\n");
+	break;
+	}
+		
+	case 5:{
+		printf("05   是雲林、嘉義 的區域號碼\n");
+	break;
+	}
+		
+	case 6:{
+		printf("06   是台南、澎湖 是區域號碼\n");
+	break;
+	}
+	
+	case 7:{
+		printf("07   是高雄的區域號碼\n");
+	break;
+	}
+	
+	case 8:{
+		printf("08   是屏東的區域號碼\n");
+	break;
+	}
+		
+	case 89:{
+		printf("089  是台東的區域號碼\n");
+	break;
+	}
+		
+	case 82:{
+		printf("082  是金門的區域號碼\n");
+	break;
+	}
+		
+	case 826:{
+		printf("0826 是烏坵的區域號碼\n");
+	break;
+	}
+		
+	case 836:{
+		printf("0836 是馬祖的區域號碼\n");
+	break;
+	}
+		
+	default:{
+		printf("查無此號碼，請再檢查一遍。\n");	
+	break;
+	}
+		
+system("pause");
+return 0 ;
+	
+     }
+	
+} 
 ```
 ### 執行結果
 ```
-
+請輸入電話區域號碼： 05
+05   是雲林、嘉義 的區域號碼
 ```
