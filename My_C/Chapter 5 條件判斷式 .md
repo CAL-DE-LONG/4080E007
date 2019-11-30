@@ -40,6 +40,11 @@ int main(void){
 	
 } 
 ```
+### 執行結果
+```
+年資未滿 1 年優秀員工 , 恭喜獲得 kpi 獎金為 9494.39
+祝新年快樂
+```
 	
 # 5-2 判斷杯數是否達到打折標準
 
@@ -55,7 +60,40 @@ else{
 
 ### 程式設計
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(){
+	
+    int Cappuccino = 50 ;    //宣告 卡布奇諾 初值為 50元 
+    int cup_Cappuccino = 1 ; //宣告 卡布奇諾 杯數為  1杯 
+    int total_price = 0 ;    //宣告 結帳金額 變數 初值為 0 
+
+    printf("卡布奇諾 原價 %d元 , 買 10 杯 打 9 折 \n請問您要買幾杯： ",Cappuccino);
+    scanf ("%d",&cup_Cappuccino);	
+
+    //小於 10 杯算原價 ,  大於 等於 10 杯 打9折 
+	
+    if (cup_Cappuccino < 10)
+        total_price = Cappuccino * cup_Cappuccino ;
+    else 
+        total_price = Cappuccino * 0.9 * cup_Cappuccino ;
+	
+	
+    printf("帳單：\n");
+    printf("卡布奇諾 %d 杯 %d 元\n",cup_Cappuccino,total_price);
+  
+    system("pause");
+    return 0;
+		
+}
+```
+### 執行結果
+```
+卡布奇諾 原價 50元 , 買 10 杯 打 9 折
+請問您要買幾杯： 20
+帳單：
+卡布奇諾 20 杯 900 元
 ```
 
 ### if-else if 條件判斷
