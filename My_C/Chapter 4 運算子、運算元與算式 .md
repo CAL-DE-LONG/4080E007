@@ -49,8 +49,58 @@ int main(void){
 需要    1元 紙鈔 0 張
 ```
 
-# 4-2 
+# 4-2 判別 
+```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+	
+    char ticket_ready = 'y' ;   //機票準備好了
+    char passport_ready = 'y' ; //準備好護照
+	
+    int  go_abroad ;
+
+    printf("\n護照辦好了嗎? <請輸入y or n>： \n");
+    passport_ready = getche();
+	
+    printf("\n機票買好了嗎? <請輸入y or n>： \n");
+    ticket_ready = getche();
+	
+    go_abroad = passport_ready == 'y' && ticket_ready == 'y';
+    printf("\n\n 1代表可出國 , 0代表很抱歉： %d\n\n",go_abroad);
+		
+    system("pause");
+    return 0;	
+	
+} 
+```
+### 執行結果
+```
+<1> 第一種執行結果
+
+護照辦好了嗎? <請輸入y or n>：
+y
+機票買好了嗎? <請輸入y or n>：
+y
+1代表可出國 , 0代表很抱歉： 1
+-----------------------------
+<2> 第二種執行結果
+
+護照辦好了嗎? <請輸入y or n>：
+n
+機票買好了嗎? <請輸入y or n>：
+y
+1代表可出國 , 0代表很抱歉： 0
+-----------------------------
+<3> 第三種執行結果
+
+護照辦好了嗎? <請輸入y or n>：
+y
+機票買好了嗎? <請輸入y or n>：
+n
+1代表可出國 , 0代表很抱歉： 0
+```
 
 
 
