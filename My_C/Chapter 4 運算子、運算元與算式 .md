@@ -87,8 +87,38 @@ y                                    y                                  n
 
 ```
 
+# 4-3 利用 複合 指定運算式 計算複合
+```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+	
+    float interest = 0.02 ;       //年利率 2%
+    float principal = 1000000.0 ;  //本金
 
+    printf("本金 1000000元 , 年利率 2%% , 計算五年後本利和\n");
+	
+    printf("一年後的本利和 = %-9.0f\n",principal = principal * (1+interest));
+    printf("一年後的本利和 = %-9.0f\n",principal = principal * (1+interest));
+    printf("一年後的本利和 = %-9.0f\n",principal = principal * (1+interest));
+    printf("一年後的本利和 = %-9.0f\n",principal = principal * (1+interest));
+    printf("一年後的本利和 = %-9.0f\n",principal = principal * (1+interest));
+	
+    system("pause");
+    return 0;	
+	
+} 
+```
+### 執行結果
+```
+本金 1000000元 , 年利率 2% , 計算五年後本利和。
+一年後的本利和 = 1020000
+一年後的本利和 = 1040400
+一年後的本利和 = 1061208
+一年後的本利和 = 1082432
+一年後的本利和 = 1104081
+```
 
 
 
