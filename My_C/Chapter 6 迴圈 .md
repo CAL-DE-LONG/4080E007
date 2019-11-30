@@ -140,5 +140,59 @@ while (條件算式){
 # 6-4 猜數字遊戲 (範圍設定 1~99)
 
 ```
-4
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+    int guess = 0 ;  //猜數字的初值為 0  
+    int times = 1 ;  //猜測幾次 
+    int random    ;  //隨機產生數字 
+	
+    srand (time(NULL));		//判別猜測了幾次 
+    random = rand() % 99 + 1 ;  //隨機產生1~99之間亂數 
+	
+    printf("請猜測一個數字： ");
+	
+    while (guess != random){   // != 意思 為 不等於 
+	
+	printf("這是您第 %d 次猜測： \n\n",times++);
+	scanf ("%d\n",&guess);
+		
+	if(guess > random){    
+            printf("猜的數字過大 , 繼續!\n\n");
+	}
+	else if (guess < random) {
+            printf("猜的數字過小 , 繼續!\n\n");
+	}		
+    }
+    
+    printf("恭喜答對了!\n");
+    printf("正確答案為 %d , 你猜了 %d 次\n\n",guess,times-1); 
+	
+    system("pause");
+    return 0 ;
+	
+} 
 ```
+### 執行結果
+```
+請猜測一個數字： 
+
+這是您第 1 次猜測： 1
+猜的數字過小 , 繼續!
+
+這是您第 2 次猜測： 20
+猜的數字過小 , 繼續!
+
+這是您第 3 次猜測： 30
+猜的數字過小 , 繼續!
+
+這是您第 4 次猜測： 40
+猜的數字過大 , 繼續!
+
+這是您第 5 次猜測： 39
+恭喜答對了!
+正確答案為 39 , 你猜了 5 次
+```
+
