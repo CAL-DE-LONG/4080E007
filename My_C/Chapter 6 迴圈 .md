@@ -12,7 +12,7 @@ for (初始算式 ; 條件算式 ; 控制算式){
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main(void){
 	
     int i , sum = 0 ; //宣告 迴圈變數 i , 總和 初值 為0 
 	
@@ -44,7 +44,7 @@ sum的值 5050
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main(void){
 	
     int i , sum = 0 ; //宣告 迴圈變數 i , 總和 初值 為0 
 	
