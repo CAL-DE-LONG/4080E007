@@ -55,24 +55,24 @@ W 的十六進位值是 57
 
 int main(void){
 	
-	char c ; //宣告一個字元變數 
+    char c ; //宣告一個字元變數 
 	
-	printf("請輸入一個字元：");
-	c = getche();
+    printf("請輸入一個字元：");
+    c = getche();
 	
-	printf("\n\n");
+    printf("\n\n");
 	
-	printf("%c %c %c %c %c %c %c %c\n",c,c,c,c,c,c,c,c);
-	printf("%c %c %c %c %c %c %c\n",c,c,c,c,c,c,c);
-	printf("%c %c %c %c %c %c\n",c,c,c,c,c,c);
-	printf("%c %c %c %c %c\n",c,c,c,c,c);
-	printf("%c %c %c %c\n",c,c,c,c);
-	printf("%c %c %c\n",c,c,c);
-	printf("%c %c\n",c,c);
-	printf("%c\n",c);
+    printf("%c %c %c %c %c %c %c %c\n",c,c,c,c,c,c,c,c);
+    printf("%c %c %c %c %c %c %c\n",c,c,c,c,c,c,c);
+    printf("%c %c %c %c %c %c\n",c,c,c,c,c,c);
+    printf("%c %c %c %c %c\n",c,c,c,c,c);
+    printf("%c %c %c %c\n",c,c,c,c);
+    printf("%c %c %c\n",c,c,c);
+    printf("%c %c\n",c,c);
+    printf("%c\n",c);
 		
-	system("pause");
-	return 0;
+    system("pause");
+    return 0;
 	
 } 
 ```
