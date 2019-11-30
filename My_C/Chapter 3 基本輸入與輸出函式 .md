@@ -90,6 +90,32 @@ int main(void){
 *
 ```
 
+# 3-4 數字計算
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+    int number1 , number2 ; //宣告兩個整數的變數 
+	
+    printf("請輸入兩個整數：");
+    scanf ("%d %d \n",&number1,&number2);
+	
+    printf("你輸入的兩個整數是 %d 與 %d \n",number1,number2);
+    printf("兩數整數相加為 %d \n",number1+number2);
+	
+    system("pause");
+    return 0;
+	
+} 
+```
+### 執行結果
+```
+請輸入兩個整數：2 3
+你輸入的兩個整數是 2 與 3
+兩數整數相加為 5
+```
 
 
 
