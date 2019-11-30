@@ -204,8 +204,39 @@ do{
 }while (條件算式);
 ```
 
-# 6-5 
+# 6-5 防呆
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void){
+	
+    int x , err ;
+	
+    do {
+		
+	printf("請輸入 [1~100] ： ");
+	err = scanf ("%d",&x) < 1 || x < 1 || x > 100 ; 
+		
+        if (err){
+			
+            printf("輸入錯誤！請重新輸入...\n\"); 
+            fflush(stdin);
+        
+  	}
+    } while (err);
+	
+    system("pause");
+    return 0 ;
+	
+} 
 ```
+### 執行結果
+```
+請輸入 [1~100] ： 101
+輸入錯誤！請重新輸入...
+
+請輸入 [1~100] ： 1
+```
+
