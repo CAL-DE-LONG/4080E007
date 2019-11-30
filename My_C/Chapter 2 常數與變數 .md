@@ -118,7 +118,7 @@ int main(void){
 
     int a = 40   ; //宣告變數a值 
     int b = 20   ; //宣告變數b值
-    int c = 100  ; 
+    int c = 100  ; //宣告變數c值
     int temp = 0 ; //宣告暫存變數 
 
     printf("交換前： a = %d , b = %d , c = %d\n",a,b,c);
