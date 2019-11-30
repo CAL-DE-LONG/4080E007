@@ -143,7 +143,7 @@ while (條件算式){
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main(void){
 	
     int guess = 0 ;  //猜數字的初值為 0  
     int times = 1 ;  //猜測幾次 
@@ -196,11 +196,11 @@ int main(){
 正確答案為 39 , 你猜了 5 次
 ```
 
-# do-while 迴圈 <後設判斷>
+### do-while 迴圈 <後設判斷>
 
-### do{
-###   動作程式
-### }while (條件算式);
+do{
+   動作程式
+}while (條件算式);
 
 
 # 6-5 
