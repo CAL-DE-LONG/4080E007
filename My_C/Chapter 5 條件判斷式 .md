@@ -236,7 +236,21 @@ int main(void){
 
 ### switch-case 條件判斷
 ```
+switch (條件算式){
 
+   case 條件算式值 1 :
+        動作程式 1 ;
+   break ;
+
+   case 條件算式值 2 :
+        動作程式 2 ;
+   break ;
+   
+   case ......
+   
+   default:
+        例外動作程式 ;
+}
 ```
 
 ### 程式設計
