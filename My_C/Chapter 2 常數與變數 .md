@@ -118,7 +118,7 @@ int main(void){
 
     int a = 40   ; //宣告變數a值 
     int b = 20   ; //宣告變數b值
-	int c = 100  ; 
+    int c = 100  ; 
     int temp = 0 ; //宣告暫存變數 
 
     printf("交換前： a = %d , b = %d , c = %d\n",a,b,c);
@@ -126,7 +126,7 @@ int main(void){
     temp = a ; // a 傳給 temp   
     a  =  b ;  //b 傳給 a 
     b  =  c ;  //c 傳給 b 
-	c = temp ; //temp 傳給 c 
+    c = temp ; //temp 傳給 c 
     printf("交換後： a = %d , b = %d , c = %d\n",a,b,c);
   
     system("pause"); //停留畫面 
@@ -134,5 +134,9 @@ int main(void){
 	
 }
 ```
- 
+### 執行結果
+```
+交換前： a = 40 , b = 20 , c = 100
+交換後： a = 20 , b = 100 , c = 40
+```
  
