@@ -117,6 +117,39 @@ int main(void){
 兩數整數相加為 5
 ```
 
+# 3-5 讀取 年齡 與 性別
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+    int age    ; //宣告 短整數 為 age 
+    char gender; //宣告 字串型態 為 gender 
+	
+    printf("請輸入年齡： ");
+    scanf ("%d",&age); //讀取第一個 scanf 的數字 
+	
+    printf("請輸入性別<男：M 女：F> ： ");
+    gender = getche(); //讀取第二個字元 
+	
+    printf("\n");
+	
+    printf("您是 %d 歲的 %c \n",age,gender);
+	
+    system("pause");
+    return 0;
+	
+} 
+```
+### 執行結果
+```
+請輸入兩個整數：2 3
+你輸入的兩個整數是 2 與 3
+兩數整數相加為 5
+```
+
+
 
 
 
